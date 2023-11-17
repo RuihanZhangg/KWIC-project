@@ -9,7 +9,7 @@ public class Main {
 		ArrayList<String>ls=new ArrayList<String>();
 		
 		InputStore inputStore=new InputStore(ls);
-		inputStore.input("input.txt");
+		inputStore.input("src\\input.txt");
 		
 		CircularShifter cs=new CircularShifter(ls);
 		cs.shift();
@@ -18,7 +18,7 @@ public class Main {
 		alp.alpha();
 		
 		Output output=new Output(alp.ls);
-		output.output("output.txt");
+		output.output("src\\output.txt");
 	}
 
 }
