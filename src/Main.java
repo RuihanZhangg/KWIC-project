@@ -1,15 +1,21 @@
 
 
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.File;
 import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ArrayList<String>ls=new ArrayList<String>();
-		
+		String root = System.getProperty("user.dir");
+		String FileName="input.txt";
+		String filePath = root+FileName;
+
+
 		InputStore inputStore=new InputStore(ls);
-		inputStore.input("src\\input.txt");
+		inputStore.input(filePath);
 		
 		CircularShifter cs=new CircularShifter(ls);
 		cs.shift();
@@ -18,7 +24,7 @@ public class Main {
 		alp.alpha();
 		
 		Output output=new Output(alp.ls);
-		output.output("src\\output.txt");
+		output.output("output.txt");
 	}
 
 }
