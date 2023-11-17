@@ -27,6 +27,7 @@ public class Output {
 		            try {
 						bw.write(ls.get(i));
 						bw.newLine();
+						System.out.println("output finished");
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
